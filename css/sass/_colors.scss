@@ -1,0 +1,35 @@
+//*==== COLOR VARIABLES ====*/
+$black-solid: black;
+$cod-gray: #2e2e2e;
+$outer-space: #323b40;
+$mine-shaft: #333333;
+$regent-gray: #85989b;
+$oslo-grey: #868f97;
+$grey-chateau: #96a2ac;
+$aluminium: #a7adba;
+$submarine: #b7bfc6;
+$alto: #dadada;
+$mystic: #d8dee9;
+$mercury: #e3e3e3;
+$aqua-haze: #ebf1f4;
+$white-solid: #ffffff;
+$athens-gray: #f7f8fa;
+$blue-gray: #6699cc;
+$pacific-blue: #0298cc;
+$red-solid: #ff0000;
+$pink: pink;
+$mardis-gras: #330042;
+$scarlet-gum: #4C3257;
+//*==== UI VARIABLES ====*/
+$bg-dimmer: rgba( $black-solid, .6); // rgba( $black-solid, .6);
+$bg-image-header: url('../gfx/pg_blog_header.jpg');
+
+//*==== CUSTOMIZATION ====*/
+$color-main: $mine-shaft; // $mine-shaft
+$bg-main: $athens-gray; // $athens-gray
+$bg-article: $white-solid; // $white-solid
+$color-accent: $pacific-blue; // $pacific-blue
+$button-accent: $outer-space; // $outer-space
+$color-headings: darken($color-main, 10%); // darken($color-main, 10%);
+$social-sharing-border: $aqua-haze; // $aqua-haze
+$blog-divider-border: $aqua-haze; // $aqua-haze

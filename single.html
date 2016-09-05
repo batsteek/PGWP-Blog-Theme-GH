@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-site-master-page="master-page-single.html" wp-site-preview-url="http://pg-blog.dev/a-short-summary-of-my-current-webdesign-process/">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="pg-blog is a Blog Theme for WordPress" wp-no-export>
+        <meta name="author" content="Pinegrow Team" wp-no-export>
+        <title wp-no-export>pg-blog</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/wp_core.css" rel="stylesheet" type="text/css">
+        <!-- <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/83c07024-8a10-419c-b8b9-1cb8f31c07a3.css" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="css/social_icons.css" rel="stylesheet" type="text/css">
+    </head>
+    <body wp-body-class>
+        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header">
+            <div class="dimmer">
+                <nav data-pg-collapsed>
+                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
+                    <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
+                </nav>
+                <div class="site-header-title">
+                    <h1 wp-the-title>Post or Page Title</h1>
+                    <div class="site-header-meta" id="header-meta">
+                        <ul class="post-categories" wp-the-category>
+                            <li>
+                                <a href="http://pg-blog.dev/category/edge-case-2/" rel="category tag">Pinegrow</a>
+                            </li>
+                        </ul>
+                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" class="thedate">August 7, 2016</span>
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <php>
+                /* Grabbing Post Author */
+                global $post;
+                $author_id=$post->post_author;
+                </php>
+                <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
+            </div>
+        </header>
+        <main id="main" class="site-content site-inner" wp-site-content data-pg-collapsed>
+            <article wp-loop class="article" wp-the-id="post" wp-post-class>
+                <span wp-edit-post-link="Edit Post" data-pg-collapsed><a href="#">Edit Post</a></span>
+                <div class="entry-meta" id="entry-meta"></div>
+                <header class="entry-header" id="entry-header">
+                    <em wp-if-has-excerpt wp-call-function="get_the_excerpt();" wp-call-function-set="content" wp-call-function-echo="true" id="single-excerpt"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</em>
+                </header>
+                <div wp-the-content wp-the-content-set="content" class="entry-content" data-pg-collapsed id="entry-content">
+                    <blockquote wp-no-export data-pg-collapsed>
+                        <p>ParagraphLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    </blockquote>
+                    <p data-pg-collapsed>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel <strong>egestas</strong> est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, <a href="#">eget semper</a> nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <img src="gfx/pg_blog_post_image.jpg" class="img">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <h2>Content</h2>
+                    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci. Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+                    <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
+                    <p>Let's assume you've already finalised the content you want to publish and just created an empty style.css file, what is the <a href="#">first rule</a> you can write?</p>
+                    <h2>Centering</h2>
+                    <p>Long lines of text can be hard to parse, and thus hard to read. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
+                    <pre><code>body {
+  margin: 0 auto;
+  max-width: 50em;
+}</code></pre>
+                    <p>After styling the text blocks, what about styling the text itself?</p>
+                </div>
+                <div class="social-sharing" id="social-sharing" data-pg-collapsed>
+                    <h2 class="share-title">Share this Post</h2>
+                    <ul class="social-icons social-icons-lg social-icons-colored social-icons-round">
+                        <li>
+                            <a onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo esc_url( the_permalink() ); ?>','sharer','toolbar=0,status=0,width=548,height=325');" href="javascript: void(0)" target="_blank" title="Share on Facebook" class="bg-facebook"><i class="fa fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/share?url=<?php echo esc_url( the_permalink() ); ?>;text=<?php the_title(); ?> @pinegrow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="bg-twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/share?url=<?php echo esc_url( the_permalink() ); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Google+" class="bg-google"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="comments" wp-comments-template="comments.php" wp-comments-template-set="content" id="comments" data-pg-collapsed>
+                    <p>Comments Form</p>
+                </div>
+                <nav class="post-navigation" data-pg-collapsed id="bottom-nav">
+                    <div class="left">
+                        <a href="" wp-prev-post-link="%link" wp-prev-post-link-link="PREV POST" class="big-button post-navigation-link"><span>PREV POST</span></a>
+                    </div>
+                    <div class="right">
+                        <a href="" class="big-button post-navigation-link" wp-next-post-link="%link" wp-next-post-link-link="NEXT POST"><span>NEXT POST</span></a>
+                    </div>
+                    <div class="float-cleaner"></div>
+                </nav>
+            </article>
+        </main>
+        <footer class="site-footer footer">
+            <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
+            <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
+        </footer>
+    </body>
+</html>

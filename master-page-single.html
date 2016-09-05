@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" wp-site wp-site-theme-name="pg_blog" wp-site-theme-slug="pg_blog" wp-site-themes-folder="/Users/earnoud/Pressmatic Sites/pg-blog/app/public/wp-content/themes/pg_blog" wp-master-page wp-site-master-page="index.html" wp-site-preview-url="http://pg-blog.dev/a-short-summary-of-my-current-webdesign-process/">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="pg-blog is a Blog Theme for WordPress" wp-no-export>
+        <meta name="author" content="Pinegrow Team" wp-no-export>
+        <title wp-no-export>pg-blog</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/wp_core.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="css/social_icons.css" rel="stylesheet" type="text/css">
+    </head>
+    <body wp-body-class>
+        <header id="masthead" wp-featured-bck wp-featured-bck-size="pgblog-header" class="site-header">
+            <div class="dimmer">
+                <nav data-pg-collapsed>
+                    <img src="gfx/pg_blog_logo-120x120.png" alt="Home" wp-call-function="pg_starter_the_custom_logo()" wp-if-custom="has_custom_logo()" class="custom-logo" />
+                    <a href="" wp-home-url wp-home-url-set="href" data-pg-hidden wp-no-export></a>
+                </nav>
+                <div class="site-header-title">
+                    <h1 wp-the-title>Post or Page Title</h1>
+                    <div class="site-header-meta" id="header-meta">
+                        <ul class="post-categories" wp-the-category>
+                            <li>
+                                <a href="http://pg-blog.dev/category/edge-case-2/" rel="category tag">Pinegrow</a>
+                            </li>
+                        </ul>
+                        <span wp-the-date wp-the-date-set="content" wp-the-date-show-same="true" class="thedate">August 7, 2016</span>
+                        <br />
+                    </div>
+                </div>
+                <br />
+                <php>
+                /* Grabbing Post Author */
+                global $post;
+                $author_id=$post->post_author;
+                </php>
+                <a href="" wp-href="author_posts" wp-href-author-id="$author_id" class="small-button site-header-link"><span wp-the-author-meta="display_name" wp-the-author-meta-set="content" wp-the-author-meta-id="$author_id">Emmanuel ARNOUD</span></a>
+            </div>
+        </header>
+        <main id="main" class="site-content site-inner" wp-site-content data-pg-collapsed>
+            <div class="pg-empty-placeholder site-inner"></div>
+        </main>
+        <footer class="site-footer footer">
+            <h2 class="footer-headings" data-pg-collapsed>Build websites faster with <a href="http://pinegrow.com">Pinegrow Web Editor</a></h2>
+            <p class="footer-paragraph">a desktop app that lets you build responsive websites faster with live multi-page editing, CSS styling and smart components for Bootstrap, Foundation, AngularJS and WordPress.</p>
+        </footer>
+    </body>
+</html>
