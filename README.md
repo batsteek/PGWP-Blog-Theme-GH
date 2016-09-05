@@ -11,3 +11,5 @@ Have a look at our Demo site on http://www.pg-blog.batsteek.fr/
 
 Note: This the the very first version of the PG-Blog theme and while we are working hard to provide a clean result,
 some issues are still possible 
+
+IMPORTANT NOTICE: From Pinegrow, don't forget to EDIT the WordPress site settings of index.html with your custom settings (particularly the Theme Folder)
